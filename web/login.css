@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background-image:url("imagenes/slider1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.estilos{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding: 50px;
+}
+
+.login{
+    
+    border-radius: 67px;
+    background: #98c3b4;
+    box-shadow:  -15px 15px 30px #4f655e,
+                15px -15px 30px #e1ffff;
+    height: 500px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.login label  {
+    display:grid;
+    width: 100%;
+    padding: 2.5rem 8.5rem;
+    grid-template-areas: "input";
+    >*{
+    /* se llama al hijo para que asi no haya problemas
+     en la animacion */
+    grid-area: input;
+}
+}
+
+
+.login label span{
+    transform-origin: left;
+    transition: transform .3s, color .3s;
+}
+
+ .inputsyle{
+    background: transparent;
+    height: 100%; 
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #2a5247;
+
+    /*funcion para animar */ 
+
+    &:focus + .span,
+    &:not(:placeholder-shown) + .span{
+        color: #ffffff;
+        padding: 15px;
+        transform: translate(-4%,-95%) scale(1, 1.2);
+
+    }}
+    .mandar{
+        position:relative;
+        left:0%;
+        background-color: #689f8c;
+        border-radius: 100px;
+        color: #101e1b;
+        cursor: pointer;
+        display: inline-block;
+        font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+        padding: 7px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 250ms;
+        border: 0;
+        font-size: 16px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        }
+
+.mandar:hover {
+        transform: scale(1.05) rotate(-1deg);
+ } 
+@media (max-width: 700px){
+body{
+    font-size: x-large;
+}
+.estilos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+    padding-top: 25px;
+}
+ .login{
+    align-items: center;
+    height: 400px;
+    width: 75%;
+    padding-right: 5px;
+    
+ }   
+
+ .login label  {
+    display:grid;
+    width: 100%;
+    padding: 2rem 2rem;
+    grid-template-areas: "input";
+    font-size: xx-large;
+}
+
+.inputsyle{
+    background: transparent;
+    height: 100%; 
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid #2a5247;
+
+
+    }
+}

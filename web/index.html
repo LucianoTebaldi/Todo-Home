@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d536297ac.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+    <title>proyecto</title>
+</head>
+<body>
+    
+    <header>
+    <nav class="nav">
+        <a href="#" class="logo nav-link">logo</a>
+        <button class="nav-toggle" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link">Carrito</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link">Productos</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link">Sobre Nosotros</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Ofertas</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+<div class="contenedor">  
+    <div class="caruseles" id="slider">
+        <section class="imgslider">
+            <img src="imagenes/slider1.jpg" alt="">
+        </section>
+        <section class="imgslider">
+            <img src="imagenes/slider2.jpg" alt="">
+        </section>
+        <section class="imgslider">
+            <img src="imagenes/slider4.png" alt="">
+        </section>
+    </div>
+    <div class="btn-right">></div>
+    <div class="btn-left"><<a</div>
+</div> 
+</div>
+
+ <div class="sobrenostos">
+    <h1>Somos tienda de muebles</h1>
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque veritatis dolorum eius vitae vero, temporibus, officia exercitationem libero assumenda eligendi amet iure illum illo? Quia beatae ullam dicta quod voluptate. 
+    </p>
+</div>
+<h1 class="produc">Nuestros Productos</h1>
+<div class="productos">
+    <div class="box-img">
+        <a href="">
+            <figure>
+                <img src="imagenes/slider1.jpg" alt="">
+                    <p class="descripcion"></p>
+                    <a href=""><button id="botontv" onclick="tv()">compra YA</button></a></p>
+                </img>
+            </figure>
+        </a>
+    </div>
+    <div class="box-img">
+        <a href="">
+            <figure>
+                <img src="imagenes/slider2.jpg" alt="">
+                    <p class="descripcion"></p>
+                    <a href=""><button id="escritorio" onclick="escritorio()">compra YA</button></a>
+                </img>
+            </figure>
+        </a>
+    </div>
+    <div class="box-img">
+        <a href="">
+            <figure>
+                <img src="imagenes/slider3.jpg" alt="">
+                    <p class="descripcion"></p
+                        ><a href=""><button id="banco" onclick="banco()">compra YA</button></a>
+                </img>
+            </figure>
+        </a>
+    </div>
+    <div class="box-img">
+        <a href="">
+            <figure>
+                <img src="imagenes/slider4.jpg" alt="">
+                    <p class="descripcion"></p>
+                    <a href=""><button id="mesa-exterior" onclick="mesaEx()">compra YA</button></a>
+                </img>
+            </figure>
+        </a>
+    </div>
+    <div class="box-img">
+        <a href="">
+            <figure>
+                <img src="imagenes/slider4.png" alt="">
+                    <p class="descripcion"></p>
+                    <a href=""><button id="mesa" onclick="mesa()">compra YA</button></a>
+                </img>
+            </figure>
+        </a>
+    </div>
+    <div class="box-img">
+        <a href="">
+            <figure>
+                <img src="imagenes/producto6.jpeg" alt="">
+                    <p class="descripcion"></p>
+                    <a href=""><button id="zapatero" onclick="zapatero()">compra YA</button></a></p>
+                </img>
+            </figure>
+        </a>
+    </div>
+</div>
+<div class="comentarios">
+    <label class="label">
+        <input type="text" class="inputsyle"
+        placeholder=" " id="comentario">
+        <span class="span">Deja tu Comentario
+        </span></input></label>
+        <button onclick="mandar()" class="mandar">enviar</button>
+    </div>
+    <div class="pantalla">
+        <ul id="ver"></ul>
+    </div>
+</div>
+</body>
+</html>
